@@ -6922,6 +6922,14 @@ shell-quote@^1.6.1:
   resolved "https://registry.npm.taobao.org/shell-quote/download/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha1-Z6fQLHbJ2iT5nSCAj8re0ODgS+I=
 
+sice-vue-component@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/sice-vue-component/-/sice-vue-component-0.1.1.tgz#2d6b2e4821d3ef9e1a248fb6471add49f538204b"
+  integrity sha512-FJa8skE+UIBe+z6xqdZUGELf4pf5takqzFFKPFlQiXLeayRaNEw5XPOT3e0wFPH1NNKzR7VpJ3aP+lv91f5YMQ==
+  dependencies:
+    core-js "^3.6.4"
+    vue "^2.6.11"
+
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.3"
   resolved "https://registry.npm.taobao.org/signal-exit/download/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
