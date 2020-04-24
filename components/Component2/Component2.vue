@@ -4,8 +4,8 @@
 
 <script>
 export default {
-  name: 'component2'
-}
+  name: 'Component2',
+};
 </script>
 
 <style>
