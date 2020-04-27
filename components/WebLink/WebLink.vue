@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'WebLink',
+  name: 'web-link',
   inject: ['getAppInfo'],
   props: {
     href: {

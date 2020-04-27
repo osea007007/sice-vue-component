@@ -1,12 +1,8 @@
-import Compontent1 from './Component1/index'
-import Compontent2 from './Component2/index'
 import AppInfoProvide from './AppInfoProvide/index'
 import IsAppShow from './IsAppShow/index'
 import WebLink from './WebLink/index'
 
 const components = {
-    Compontent1,
-    Compontent2,
     AppInfoProvide,
     IsAppShow,
     WebLink

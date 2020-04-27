@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'IsAppShow',
+  name: 'is-app-show',
   inject: ['getAppInfo'],
   computed: {
     isApp() {
