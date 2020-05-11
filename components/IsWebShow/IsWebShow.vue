@@ -1,22 +1,16 @@
 <template>
-  <span v-if="isApp">
+  <div v-if="!isApp">
+    <div class="top">
+      <slot name="top"></slot>
+    </div>
     <slot></slot>
-  </span>
-  <a v-else
-     v-bind:href="href">
-    <slot></slot>
-  </a>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'jf-web-link',
+  name: 'jf-is-web-show',
   inject: ['getAppInfo'],
-  props: {
-    href: {
-      type: String,
-    },
-  },
   computed: {
     isApp() {
       return this.getAppInfo().isApp;
@@ -24,3 +18,5 @@ export default {
   },
 };
 </script>
+
+<style scoped></style>

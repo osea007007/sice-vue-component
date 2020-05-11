@@ -1,17 +1,24 @@
 <template>
-  <div id="app">
+  <AppInfoProvide id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <component1 />
-  </div>
+    <JFToggleLink appHref="www.baidu.com1" webHref="www.baidu.com2"
+      >123</JFToggleLink
+    >
+  </AppInfoProvide>
 </template>
 
 <script>
-import Vue from 'vue';
+import AppInfoProvide from '../components/AppInfoProvide/AppInfoProvide.vue';
+import JFToggleLink from '../components/JFToggleLink/JFToggleLink.vue';
 
 export default {
   name: 'App',
   created() {
-    console.log(Vue.options.components);
+    console.log(this);
+  },
+  components: {
+    AppInfoProvide,
+    JFToggleLink,
   },
 };
 </script>

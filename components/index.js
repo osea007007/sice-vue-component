@@ -1,11 +1,16 @@
 import AppInfoProvide from './AppInfoProvide/index'
 import IsAppShow from './IsAppShow/index'
 import WebLink from './WebLink/index'
+import IsWebShow from './IsWebShow/index'
+import JFToggleLink from './JFToggleLink/index'
+
 
 const components = {
     AppInfoProvide,
     IsAppShow,
-    WebLink
+    WebLink,
+    IsWebShow,
+    JFToggleLink
 }
 
 function install(Vue) {

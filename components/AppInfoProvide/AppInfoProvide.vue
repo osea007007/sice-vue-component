@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'app-info-provide',
+  name: 'jf-app-info-provide',
   methods: {
     setAppInfo(obj) {
       this.appInfo = obj;
