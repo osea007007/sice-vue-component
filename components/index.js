@@ -3,6 +3,7 @@ import IsAppShow from './IsAppShow/index'
 import WebLink from './WebLink/index'
 import IsWebShow from './IsWebShow/index'
 import JFToggleLink from './JFToggleLink/index'
+import JFLoginAuth from './JFLoginAuth/index'
 
 
 const components = {
@@ -10,7 +11,8 @@ const components = {
     IsAppShow,
     WebLink,
     IsWebShow,
-    JFToggleLink
+    JFToggleLink,
+    JFLoginAuth
 }
 
 function install(Vue) {
