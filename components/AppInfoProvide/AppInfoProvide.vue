@@ -15,8 +15,6 @@ export default {
       //     // eslint-disable-next-line no-console
       //     console.log(JSON.stringify(data))
       //   }
-      console.log('sendMessageToApp');
-
       window.ReactNativeWebView &&
         window.ReactNativeWebView.postMessage(JSON.stringify(data));
     },
@@ -52,7 +50,6 @@ export default {
       }
     };
     window.document.addEventListener('message', handleMessage);
-    console.log('created');
     this.sendMessageToApp({
       type: 'GET_RN_MSG_DATA',
     });

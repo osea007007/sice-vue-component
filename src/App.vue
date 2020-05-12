@@ -1,9 +1,9 @@
 <template>
   <AppInfoProvide id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <JFToggleLink appHref="www.baidu.com1" webHref="www.baidu.com2"
-      >123</JFToggleLink
-    >
+    <img alt="Vue logo"
+         src="./assets/logo.png" />
+    <JFToggleLink appHref="www.baidu.com1"
+                  webHref="www.baidu.com2">123</JFToggleLink>
   </AppInfoProvide>
 </template>
 
@@ -13,9 +13,6 @@ import JFToggleLink from '../components/JFToggleLink/JFToggleLink.vue';
 
 export default {
   name: 'App',
-  created() {
-    console.log(this);
-  },
   components: {
     AppInfoProvide,
     JFToggleLink,
