@@ -2,8 +2,8 @@
   <AppInfoProvide id="app">
     <img alt="Vue logo"
          src="./assets/logo.png" />
-    <JFToggleLink appHref="www.baidu.com1"
-                  webHref="www.baidu.com2">123</JFToggleLink>
+    <JFToggleLink appHref="www.test.com1"
+                  webHref="www.test.com2">123</JFToggleLink>
   </AppInfoProvide>
 </template>
 

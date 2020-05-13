@@ -4,6 +4,7 @@
   </div>
 </template>
 <script>
+import { sendMessage } from '../../common/utils'
 export default {
   name: 'jf-app-info-provide',
   methods: {
@@ -11,19 +12,8 @@ export default {
       this.appInfo = obj;
     },
     sendMessageToApp(data) {
-      //   if (process.env.NODE_ENV !== 'production') {
-      //     // eslint-disable-next-line no-console
-      //     console.log(JSON.stringify(data))
-      //   }
-      window.ReactNativeWebView &&
-        window.ReactNativeWebView.postMessage(JSON.stringify(data));
+      sendMessage(data)
     },
-  },
-  data() {
-    return {
-      appInfo: {},
-      appInfo1: {},
-    };
   },
   provide() {
     return {

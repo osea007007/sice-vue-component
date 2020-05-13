@@ -5,8 +5,7 @@ import IsWebShow from './IsWebShow/index'
 import JFToggleLink from './JFToggleLink/index'
 import JFLoginAuth from './JFLoginAuth/index'
 import JFLoginShow from './JFLoginShow/index'
-
-
+import JFGoToFund from './JFGoToFund/index'
 
 const components = {
     AppInfoProvide,
@@ -15,7 +14,8 @@ const components = {
     IsWebShow,
     JFToggleLink,
     JFLoginAuth,
-    JFLoginShow
+    JFLoginShow,
+    JFGoToFund
 }
 
 function install(Vue) {

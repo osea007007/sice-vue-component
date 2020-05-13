@@ -7,10 +7,9 @@
 
 <script>
 // 未登錄顯示組件並點擊去登錄
-import { sendMessage } from '../../common/utils.js'
 export default {
   name: 'jf-login-auth',
-  inject: ['getAppInfo'],
+  inject: ['getAppInfo', 'sendMessageToApp'],
   computed: {
     unOpenAccount() {
       return !this.getAppInfo().isLogin;
@@ -18,7 +17,7 @@ export default {
   },
   methods: {
     goLogin() {
-      sendMessage({
+      this.sendMessageToApp({
         type: 'NAVIGATE',
         payload: {
           path: 'Login',
