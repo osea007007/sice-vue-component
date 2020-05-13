@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import { sendMessage } from '../../common/utils'
+import { sendMessage } from '../../common/utils';
 export default {
   name: 'jf-app-info-provide',
   methods: {
@@ -12,8 +12,13 @@ export default {
       this.appInfo = obj;
     },
     sendMessageToApp(data) {
-      sendMessage(data)
+      sendMessage(data);
     },
+  },
+  data() {
+    return {
+      appInfo: {},
+    };
   },
   provide() {
     return {
