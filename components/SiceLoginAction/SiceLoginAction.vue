@@ -1,7 +1,7 @@
 <template>
-  <div v-if="unOpenAccount" v-on:click="goLogin()">
+  <a v-if="unOpenAccount" :href="`twsice://login`">
     <slot></slot>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -12,16 +12,6 @@ export default {
   computed: {
     unOpenAccount() {
       return !this.getAppInfo().isLogin;
-    },
-  },
-  methods: {
-    goLogin() {
-      this.sendMessageToApp({
-        type: 'NAVIGATE',
-        payload: {
-          path: 'Login',
-        },
-      });
     },
   },
 };

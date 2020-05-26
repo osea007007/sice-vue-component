@@ -6,6 +6,8 @@ import SiceLoginAction from './SiceLoginAction/index'
 import SiceLoginShow from './SiceLoginShow/index'
 import SiceLink from './SiceLink/index'
 import SiceWebLink from './SiceWebLink/index'
+import SiceLqld from './SiceLqld/index'
+
 
 const components = {
     SiceProvider,
@@ -16,6 +18,7 @@ const components = {
     SiceLoginShow,
     SiceLink,
     SiceWebLink,
+    SiceLqld
 }
 
 function install(Vue) {
