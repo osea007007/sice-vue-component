@@ -1,21 +1,19 @@
 <template>
-  <AppInfoProvide id="app">
-    <img alt="Vue logo"
-         src="./assets/logo.png" />
-    <JFToggleLink appHref="www.test.com1"
-                  webHref="www.test.com2">123</JFToggleLink>
-  </AppInfoProvide>
+  <SiceProvider id="app">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <SiceLink appHref="www.test.com1" webHref="www.test.com2">123</SiceLink>
+  </SiceProvider>
 </template>
 
 <script>
-import AppInfoProvide from '../components/AppInfoProvide/AppInfoProvide.vue';
-import JFToggleLink from '../components/JFToggleLink/JFToggleLink.vue';
+import SiceProvider from '../components/SiceProvider/SiceProvider.vue';
+import SiceLink from '../components/SiceLink/SiceLink.vue';
 
 export default {
   name: 'App',
   components: {
-    AppInfoProvide,
-    JFToggleLink,
+    SiceProvider,
+    SiceLink,
   },
 };
 </script>

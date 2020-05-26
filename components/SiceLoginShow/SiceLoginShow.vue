@@ -7,7 +7,7 @@
 <script>
 // 登錄顯示組件
 export default {
-  name: 'jf-login-show',
+  name: 'sice-login-show',
   inject: ['getAppInfo'],
   computed: {
     isLogin() {

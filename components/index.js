@@ -1,21 +1,21 @@
-import AppInfoProvide from './AppInfoProvide/index'
-import IsAppShow from './IsAppShow/index'
-import WebLink from './WebLink/index'
-import IsWebShow from './IsWebShow/index'
-import JFToggleLink from './JFToggleLink/index'
-import JFLoginAuth from './JFLoginAuth/index'
-import JFLoginShow from './JFLoginShow/index'
-import JFGoToFund from './JFGoToFund/index'
+import SiceProvider from './SiceProvider/index'
+import SiceWebShow from './SiceWebShow/index'
+import SiceAppShow from './SiceAppShow/index'
+import SiceFund from './SiceFund/index'
+import SiceLoginAction from './SiceLoginAction/index'
+import SiceLoginShow from './SiceLoginShow/index'
+import SiceLink from './SiceLink/index'
+import SiceWebLink from './SiceWebLink/index'
 
 const components = {
-    AppInfoProvide,
-    IsAppShow,
-    WebLink,
-    IsWebShow,
-    JFToggleLink,
-    JFLoginAuth,
-    JFLoginShow,
-    JFGoToFund
+    SiceProvider,
+    SiceWebShow,
+    SiceAppShow,
+    SiceFund,
+    SiceLoginAction,
+    SiceLoginShow,
+    SiceLink,
+    SiceWebLink,
 }
 
 function install(Vue) {

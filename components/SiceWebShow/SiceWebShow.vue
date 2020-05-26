@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'jf-is-web-show',
+  name: 'sice-web-show',
   inject: ['getAppInfo'],
   computed: {
     isApp() {

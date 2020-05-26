@@ -1,16 +1,21 @@
 <template>
-  <div v-if="isApp">
-    <div class="top">
-      <slot name="top"></slot>
-    </div>
+  <a :href="isApp ? appHref : webHref">
     <slot></slot>
-  </div>
+  </a>
 </template>
 
 <script>
 export default {
-  name: 'jf-is-app-show',
+  name: 'sice-link',
   inject: ['getAppInfo'],
+  props: {
+    webHref: {
+      type: String,
+    },
+    appHref: {
+      type: String,
+    },
+  },
   computed: {
     isApp() {
       return this.getAppInfo().isApp;
@@ -18,5 +23,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>

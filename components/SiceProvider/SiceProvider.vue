@@ -6,7 +6,7 @@
 <script>
 import { sendMessage } from '../../common/utils';
 export default {
-  name: 'jf-app-info-provide',
+  name: 'sice-provider',
   methods: {
     setAppInfo(obj) {
       this.appInfo = obj;
@@ -51,9 +51,3 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-#app {
-  border: 1px solid #000;
-  padding: 20px;
-}
-</style>

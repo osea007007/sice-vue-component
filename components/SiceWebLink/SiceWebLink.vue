@@ -1,20 +1,20 @@
 <template>
-  <a :href="isApp?appHref:webHref">
+  <span v-if="isApp">
+    <slot></slot>
+  </span>
+  <a v-else v-bind:href="href">
     <slot></slot>
   </a>
 </template>
 
 <script>
 export default {
-  name: 'jf-toggle-link',
+  name: 'sice-web-link',
   inject: ['getAppInfo'],
   props: {
-    webHref: {
+    href: {
       type: String,
     },
-    appHref: {
-      type: String,
-    }
   },
   computed: {
     isApp() {
