@@ -1,9 +1,7 @@
 <template>
-  <a
-    :href="
+  <a :href="
       fundId ? `twsice://fundDetail?fundId=${fundId}` : 'twsice://fundList'
-    "
-  >
+    ">
     <slot></slot>
   </a>
 </template>
@@ -19,4 +17,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style></style>

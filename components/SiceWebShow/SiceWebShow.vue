@@ -1,8 +1,5 @@
 <template>
   <div v-if="!isApp">
-    <div class="top">
-      <slot name="top"></slot>
-    </div>
     <slot></slot>
   </div>
 </template>
@@ -19,4 +16,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style></style>

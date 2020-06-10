@@ -1,5 +1,6 @@
 <template>
-  <a v-if="unOpenAccount" :href="`twsice://login`">
+  <a v-if="unOpenAccount"
+     :href="`twsice://login`">
     <slot></slot>
   </a>
 </template>
@@ -17,4 +18,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style></style>

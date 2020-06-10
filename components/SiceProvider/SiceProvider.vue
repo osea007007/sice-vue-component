@@ -7,6 +7,11 @@
 import { sendMessage } from '../../common/utils';
 export default {
   name: 'sice-provider',
+  props: {
+    mockData: {
+      type: Object
+    },
+  },
   methods: {
     setAppInfo(obj) {
       this.appInfo = obj;
@@ -17,7 +22,7 @@ export default {
   },
   data() {
     return {
-      appInfo: {},
+      appInfo: this.mockData || {},
     };
   },
   provide() {
