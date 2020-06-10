@@ -1,8 +1,10 @@
 <template>
-  <SiceProvider id="app">
+  <SiceProvider id="app" :mockData="{ isApp: false }">
     <img alt="Vue logo" src="./assets/logo.png" />
     <p>
-      <SiceLink appHref="www.test.com1" webHref="www.test.com2">123</SiceLink>
+      哈哈哈<SiceWebLink appHref="www.test.com1" webHref="www.test.com2"
+        >123</SiceWebLink
+      >呵呵呵呵呵
     </p>
     <p>
       <SiceFund fundId="0779">0779</SiceFund>
@@ -13,22 +15,30 @@
     <p>
       <SiceLqld>SiceLqld</SiceLqld>
     </p>
+    <SiceAppShow>
+      <p>SiceAppShow</p>
+      <p>SiceAppShow</p>
+
+      <p>SiceAppShow</p>
+    </SiceAppShow>
   </SiceProvider>
 </template>
 
 <script>
 import SiceProvider from '../components/SiceProvider/SiceProvider.vue';
-import SiceLink from '../components/SiceLink/SiceLink.vue';
+import SiceWebLink from '../components/SiceWebLink/SiceWebLink.vue';
 import SiceFund from '../components/SiceFund/SiceFund';
 import SiceLqld from '../components/SiceLqld/SiceLqld';
+import SiceAppShow from '../components/SiceAppShow/SiceAppShow';
 
 export default {
   name: 'App',
   components: {
     SiceProvider,
-    SiceLink,
+    SiceWebLink,
     SiceFund,
     SiceLqld,
+    SiceAppShow,
   },
 };
 </script>

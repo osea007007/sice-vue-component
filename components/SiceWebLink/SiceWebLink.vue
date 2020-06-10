@@ -1,13 +1,15 @@
 <template>
-  <span v-if="isApp">
+  <fragment v-if="isApp">
     <slot></slot>
-  </span>
+  </fragment>
   <a v-else v-bind:href="href">
     <slot></slot>
   </a>
 </template>
 
 <script>
+import { Fragment } from 'vue-fragment';
+
 export default {
   name: 'sice-web-link',
   inject: ['getAppInfo'],
@@ -21,5 +23,6 @@ export default {
       return this.getAppInfo().isApp;
     },
   },
+  components: { Fragment },
 };
 </script>

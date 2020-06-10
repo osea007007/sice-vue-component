@@ -1,10 +1,12 @@
 <template>
-  <div v-if="!isApp">
+  <fragment v-if="!isApp">
     <slot></slot>
-  </div>
+  </fragment>
 </template>
 
 <script>
+import { Fragment } from 'vue-fragment';
+
 export default {
   name: 'sice-web-show',
   inject: ['getAppInfo'],
@@ -13,6 +15,7 @@ export default {
       return this.getAppInfo().isApp;
     },
   },
+  components: { Fragment },
 };
 </script>
 

@@ -1,10 +1,12 @@
 <template>
-  <div v-if="isLogin">
+  <fragment v-if="isLogin">
     <slot></slot>
-  </div>
+  </fragment>
 </template>
 
 <script>
+import { Fragment } from 'vue-fragment';
+
 // 登錄顯示組件
 export default {
   name: 'sice-login-show',
@@ -14,6 +16,7 @@ export default {
       return this.getAppInfo().isLogin;
     },
   },
+  components: { Fragment },
 };
 </script>
 
