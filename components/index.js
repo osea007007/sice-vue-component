@@ -7,6 +7,8 @@ import SiceLoginShow from './SiceLoginShow/index'
 import SiceLink from './SiceLink/index'
 import SiceWebLink from './SiceWebLink/index'
 import SiceLqld from './SiceLqld/index'
+import SiceLogin from '../directives/SiceLogin/SiceLogin'
+import SiceLoginHide from './SiceLoginHide/index'
 
 
 const components = {
@@ -18,7 +20,8 @@ const components = {
     SiceLoginShow,
     SiceLink,
     SiceWebLink,
-    SiceLqld
+    SiceLqld,
+    SiceLoginHide
 }
 
 function install(Vue) {
@@ -33,4 +36,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
+    ...SiceLogin
 }

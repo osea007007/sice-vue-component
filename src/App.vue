@@ -1,5 +1,5 @@
 <template>
-  <SiceProvider id="app" :mockData="{ isApp: false }">
+  <SiceProvider id="app" :mockData="{ isApp: true, isLogin: false }">
     <img alt="Vue logo" src="./assets/logo.png" />
     <p>
       哈哈哈<SiceWebLink appHref="www.test.com1" webHref="www.test.com2"
@@ -21,15 +21,20 @@
 
       <p>SiceAppShow</p>
     </SiceAppShow>
+    <SiceLoginAction>
+      <div>點擊</div>
+    </SiceLoginAction>
+    <p v-appLogin>點擊login</p>
   </SiceProvider>
 </template>
 
 <script>
-import SiceProvider from '../components/SiceProvider/SiceProvider.vue';
-import SiceWebLink from '../components/SiceWebLink/SiceWebLink.vue';
+import SiceProvider from '../components/SiceProvider/SiceProvider';
+import SiceWebLink from '../components/SiceWebLink/SiceWebLink';
 import SiceFund from '../components/SiceFund/SiceFund';
 import SiceLqld from '../components/SiceLqld/SiceLqld';
 import SiceAppShow from '../components/SiceAppShow/SiceAppShow';
+import SiceLoginAction from '../components/SiceLoginAction/SiceLoginAction';
 
 export default {
   name: 'App',
@@ -39,6 +44,7 @@ export default {
     SiceFund,
     SiceLqld,
     SiceAppShow,
+    SiceLoginAction,
   },
 };
 </script>
