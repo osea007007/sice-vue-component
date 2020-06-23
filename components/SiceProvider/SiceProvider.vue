@@ -47,6 +47,7 @@ export default {
       const { type: action, payload } = e.data || {};
       if (action === 'RN_MSG_DATA_SEND') {
         this.appInfo = payload;
+        window.appInfo = payload;
       }
     };
     window.document.addEventListener('message', handleMessage);
