@@ -1,6 +1,6 @@
 
 function install(Vue) {
-    Vue.directive('appLogin', {
+    Vue.directive('app-login', {
         bind(el) {
             function myAddEvent(obj, ev, fn) {
                 if (obj.attachEvent) {
