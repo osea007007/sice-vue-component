@@ -1,10 +1,11 @@
 <template>
-  <fragment v-if="isApp">
-    <slot></slot>
+  <fragment>
+    <slot v-if="isApp"></slot>
+    <a v-else
+       v-bind:href="href">
+      <slot></slot>
+    </a>
   </fragment>
-  <a v-else v-bind:href="href">
-    <slot></slot>
-  </a>
 </template>
 
 <script>

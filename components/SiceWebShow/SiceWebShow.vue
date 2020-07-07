@@ -1,6 +1,6 @@
 <template>
-  <fragment v-if="!isApp">
-    <slot></slot>
+  <fragment>
+    <slot v-if="!isApp"></slot>
   </fragment>
 </template>
 

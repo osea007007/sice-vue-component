@@ -1,6 +1,6 @@
 <template>
-  <fragment v-if="!isLogin">
-    <slot></slot>
+  <fragment>
+    <slot v-if="!isLogin"></slot>
   </fragment>
 </template>
 

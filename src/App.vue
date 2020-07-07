@@ -1,10 +1,11 @@
 <template>
-  <SiceProvider id="app" :mockData="{ isApp: true, isLogin: false }">
-    <img alt="Vue logo" src="./assets/logo.png" />
+  <SiceProvider id="app"
+                :mockData="{ isApp: true, isLogin: true }">
+    <img alt="Vue logo"
+         src="./assets/logo.png" />
     <p>
-      哈哈哈<SiceWebLink appHref="www.test.com1" webHref="www.test.com2"
-        >123</SiceWebLink
-      >呵呵呵呵呵
+      哈哈哈<SiceWebLink appHref="www.test.com1"
+                   webHref="www.test.com2">123</SiceWebLink>呵呵呵呵呵
     </p>
     <p>
       <SiceFund fundId="0779">0779</SiceFund>
@@ -24,7 +25,10 @@
     <SiceLoginAction>
       <div>點擊</div>
     </SiceLoginAction>
-    <p v-appLogin>點擊login</p>
+    <SiceLoginHide>SiceLoginHide</SiceLoginHide>
+    <SiceLoginShow>SiceLoginShow</SiceLoginShow>
+
+    <p v-app-login>點擊login</p>
   </SiceProvider>
 </template>
 
@@ -35,6 +39,10 @@ import SiceFund from '../components/SiceFund/SiceFund';
 import SiceLqld from '../components/SiceLqld/SiceLqld';
 import SiceAppShow from '../components/SiceAppShow/SiceAppShow';
 import SiceLoginAction from '../components/SiceLoginAction/SiceLoginAction';
+import SiceLoginHide from '../components/SiceLoginHide/SiceLoginHide'
+import SiceLoginShow from '../components/SiceLoginShow/SiceLoginShow';
+
+
 
 export default {
   name: 'App',
@@ -45,6 +53,8 @@ export default {
     SiceLqld,
     SiceAppShow,
     SiceLoginAction,
+    SiceLoginHide,
+    SiceLoginShow
   },
 };
 </script>

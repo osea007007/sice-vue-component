@@ -45,9 +45,21 @@ export default {
   created() {
     const handleMessage = (e) => {
       const { type: action, payload } = e.data || {};
-      if (action === 'RN_MSG_DATA_SEND') {
-        this.appInfo = payload;
-        window.appInfo = payload;
+      switch (action) {
+        case 'RN_MSG_DATA_SEND':
+          this.appInfo = payload;
+          window.appInfo = payload;
+          break;
+        case 'UPDATE_TOKEN':
+          this.appInfo = {
+            ...this.appInfo,
+            isLogin: Boolean(payload.token)
+          };
+          window.appInfo = {
+            ...this.appInfo,
+            isLogin: Boolean(payload.token)
+          };
+          break;
       }
     };
     window.document.addEventListener('message', handleMessage);
