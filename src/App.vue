@@ -28,7 +28,7 @@
     <SiceLoginHide>SiceLoginHide</SiceLoginHide>
     <SiceLoginShow>SiceLoginShow</SiceLoginShow>
 
-    <p v-app-login>點擊login</p>
+    <p v-app-login="{isApp: true, isLogin: true}">點擊login</p>
   </SiceProvider>
 </template>
 

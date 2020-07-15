@@ -1,6 +1,6 @@
 
 function install(Vue) {
-    Vue.directive('app-login', {
+    Vue.directive('app-fund', {
         bind(el) {
             function myAddEvent(obj, ev, fn) {
                 if (obj.attachEvent) {
@@ -11,7 +11,7 @@ function install(Vue) {
             }
             myAddEvent(el, 'click', function () {
                 if (window.appInfo.isApp) {
-                    window.location.href = 'twsice://login';
+                    window.location.href = 'twsice://fund';
                 }
             });
         },
@@ -24,15 +24,4 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
-    inject: ['getAppInfo'],
-    props: {
-        href: {
-            type: String,
-        },
-    },
-    computed: {
-        isApp() {
-            return this.getAppInfo().isApp;
-        },
-    },
 }
