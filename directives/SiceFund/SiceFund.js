@@ -10,8 +10,13 @@ function install(Vue) {
                 }
             }
             myAddEvent(el, 'click', function () {
-                if (window.appInfo.isApp) {
-                    window.location.href = 'twsice://fund';
+                const { isApp, openLog } = window.appInfo || {};
+                if (isApp) {
+                    if (openLog) {
+                        console.log('twsice://fund')
+                    } else {
+                        window.location.href = 'twsice://fund';
+                    }
                 }
             });
         },

@@ -43,6 +43,9 @@ export default {
     };
   },
   created() {
+    if (this.mockData) {
+      window.appInfo = this.mockData;
+    }
     const handleMessage = (e) => {
       const { type: action, payload } = e.data || {};
       switch (action) {
