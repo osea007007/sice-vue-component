@@ -1,6 +1,6 @@
 
 function install(Vue) {
-    Vue.directive('app-fund', {
+    Vue.directive('app-fund-list', {
         bind(el) {
             function myAddEvent(obj, ev, fn) {
                 if (obj.attachEvent) {

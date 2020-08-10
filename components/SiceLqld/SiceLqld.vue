@@ -1,5 +1,6 @@
 <template>
-  <a :href="`twsice://lqld`">
+  <a :href="`twsice://lqld`"
+     v-bind="$attrs">
     <slot></slot>
   </a>
 </template>

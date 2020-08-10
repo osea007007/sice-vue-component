@@ -1,7 +1,6 @@
 <template>
-  <a :href="
-      fundId ? `twsice://fundDetail?fundId=${fundId}` : 'twsice://fundList'
-    ">
+  <a v-bind="$attrs"
+     :href="fundId ? `twsice://fundDetail?fundId=${fundId}` : 'twsice://fundList'">
     <slot></slot>
   </a>
 </template>

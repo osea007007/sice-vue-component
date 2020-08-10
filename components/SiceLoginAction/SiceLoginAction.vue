@@ -1,6 +1,7 @@
 <template>
   <a v-if="unOpenAccount"
-     :href="`twsice://login`">
+     :href="`twsice://login`"
+     v-bind="$attrs">
     <slot></slot>
   </a>
 </template>

@@ -1,5 +1,6 @@
 <template>
-  <a :href="isApp ? appHref : webHref">
+  <a v-bind="$attrs"
+     :href="isApp ? appHref : webHref">
     <slot></slot>
   </a>
 </template>

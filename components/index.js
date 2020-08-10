@@ -8,6 +8,7 @@ import SiceLink from './SiceLink/index'
 import SiceWebLink from './SiceWebLink/index'
 import SiceLqld from './SiceLqld/index'
 import SiceLogin from '../directives/SiceLogin/SiceLogin'
+import SiceFundList from '../directives/SiceFundList/SiceFundList'
 import SiceLoginHide from './SiceLoginHide/index'
 
 
@@ -36,5 +37,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
-    ...SiceLogin
+    ...SiceLogin,
+    ...SiceFundList,
 }
